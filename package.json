@@ -1,0 +1,23 @@
+{
+  "name": "tf-lambda-limit-one-entry",
+  "version": "1.0.0",
+  "description": "Limit double entry in your typeform using Serverless.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typeforn",
+    "serverless",
+    "API"
+  ],
+  "author": {
+    "name" : "Nicolas Grenié",
+    "email" : "nicolas.grenie@typeform.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@typeform/api-client": "^1.2.2",
+    "npm": "^6.4.1"
+  }
+}

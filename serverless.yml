@@ -1,0 +1,17 @@
+service: tf-lambda-limit-one-entry
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  addLimitLogic:
+    handler: handler.addLimitLogic
+    environment:
+      FORM_ID: 'YOUR_FORM_ID' # Which form you want to update
+      FIELD_ID: 'YOUR_EMAIL_FIELD_ID' # Id of the unique field
+      FIELD_REF: 'YOUR_EMAIL_FIELD_REF' # Ref of the unique field
+      TF_TOKEN: 'TYPEFORM_PERSONAL_TOKEN' #Typeform API token
+      ALREADY_FILLED_FIELD_REF: 'STATEMENT_BLOCK_FIELD_REF' # Ref for the "already filled" statement block
+    events:
+      - http: POST addLimitLogic
