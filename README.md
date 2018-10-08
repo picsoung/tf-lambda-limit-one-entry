@@ -21,7 +21,7 @@ Pre-requesites:
 4. Add sample logic between the email block and statement.
 5. Get your typeform URL, and keep your form ID.
   `https://{ACCOUNT_NAME}.typeform.com/to/{FORM_ID}`
-6. Hit `https://api.typeform.com/to/{FORM_ID}` directly in the browser.
+6. Hit `https://api.typeform.com/forms/{FORM_ID}` directly in the browser.
 
 ![payload from Typeform API for form definition](./doc-images/api_typeform_payload.png)
 
